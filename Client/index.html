@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="erin.ico">
+    <title>Wandering Inn Scraper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content-wrapper">
+        <div id="form">
+            <h1>Hello!</h1>
+            <h2>Select the volume:</h2>
+
+            <select name="volumes" id="volumes" onchange="submitVolume();">
+                <option value="Volume 1" selected disabled>Select here</option>
+            </select>
+
+            <div class="container">
+                <h2>Select the chapters:</h2>
+                <select name="chapters" id="chapters" multiple onchange="enableButton();"></select>
+                <button class="button" id="submitChapters" onclick="submitChapters();" disabled>Submit</button>
+            </div>
+        </div> 
+
+        <div id="progress" style="display: none;">
+            <a class="back_link" onclick="goBack();">&#8592; Back</a>
+            <h1>Almost done!</h1>
+            <div id="messages"></div>
+            <a class="button" id="downloadFile" disabled>Download</a>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
