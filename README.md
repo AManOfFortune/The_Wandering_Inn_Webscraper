@@ -1,12 +1,12 @@
-# [The Wandering Inn Webscraper](https://the-wandering-inn-webscraper.onrender.com)
+# ✨[The Wandering Inn Webscraper](https://the-wandering-inn-webscraper.onrender.com)✨
 
 ### The simple way to download [The Wandering Inn](https://wanderinginn.com) chapters to .doc and .epub
 
-[The Wandering Inn Webscraper App](./img/the_wandering_inn_webscraper.png)
+![The Wandering Inn Webscraper App](/img/the_wandering_inn_webscraper.png)
 
 ## Usage
 The recommended usage is the live hosted version here: [https://the-wandering-inn-webscraper.onrender.com](https://the-wandering-inn-webscraper.onrender.com).
-Simply select a volume, select the chapters you want to download and klick submit. Afterwards you can klick on "Download" to download your selected chapters.
+<br><br>Simply select a volume, select the chapters you want to download and klick submit. Afterwards you can klick on "Download" to download your selected chapters.
 
 ## Local install
 If you want to install and run this project locally, use the following steps:
