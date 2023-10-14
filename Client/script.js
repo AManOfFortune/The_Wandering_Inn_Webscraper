@@ -1,3 +1,5 @@
+const hostingAddress = "https://the-wandering-inn-webscraper.onrender.com"
+
 function newEl(type, attrs={})
 {
     const el = document.createElement(type);
@@ -48,7 +50,7 @@ function Utf8ArrayToStr(array) {
 (async function loadVolumes() {
     const dropdown = document.querySelector('#volumes')
 
-    const res = await fetch("http://localhost:8000/load", {method: 'GET'})
+    const res = await fetch(hostingAddress + "/load", {method: 'GET'})
 
     res.text().then(text => {
         const volume_titles = JSON.parse(text).volumes;
@@ -81,7 +83,7 @@ async function submitVolume() {
     const select = document.querySelector('#chapters')
     select.innerHTML = ""
 
-    const res = await fetch('http://localhost:8000/chapters', {
+    const res = await fetch(hostingAddress + "/chapters", {
         method: 'POST',
         headers: { 
             'Content-Type': 'application/json'
@@ -114,7 +116,7 @@ async function submitChapters() {
     progress.style.display = 'flex'
     form.style.display = 'none'
     
-    const res = await fetch('http://localhost:8000/selection', {
+    const res = await fetch(hostingAddress + "/selection", {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

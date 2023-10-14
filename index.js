@@ -1,3 +1,5 @@
+const hostingAddress = "https://the-wandering-inn-webscraper.onrender.com"
+
 //Server is listening on Port 80
 const PORT = 80;
 
@@ -36,7 +38,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true })); 
 
 app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*"); // disabled for security on local
+    res.header("Access-Control-Allow-Origin", hostingAddress);
     res.header("Access-Control-Allow-Headers", "Content-Type");
 
     console.log("Request to: \"" + req.url + "\"")
