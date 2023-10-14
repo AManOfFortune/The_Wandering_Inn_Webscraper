@@ -1,5 +1,5 @@
-//Server is listening on Port 8000
-const PORT = 8000;
+//Server is listening on Port 80
+const PORT = 80;
 
 const axios = require('axios')
 const cheerio = require('cheerio')
