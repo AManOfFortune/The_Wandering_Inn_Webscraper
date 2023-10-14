@@ -44,6 +44,8 @@ h1 {
     align-items: center;
     justify-content: center;
 
+    position: relative;
+
     width: 100%;
 }
 
@@ -53,7 +55,7 @@ h1 {
 
     font-size: 1rem;
     line-height: 1.5;
-    font-family: var(--font-family);
+    font-family: var(--fonts);
 
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
@@ -114,7 +116,7 @@ h1 {
 
     font-size: 1rem;
     line-height: 1.5;
-    font-family: var(--font-family);
+    font-family: var(--fonts);
 
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
@@ -206,7 +208,7 @@ h1 {
 
     font-size: 1rem;
     line-height: 1.5;
-    font-family: var(--font-family);
+    font-family: var(--fonts);
 
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
@@ -214,4 +216,65 @@ h1 {
 
 #messages p {
     margin: 0;
+}
+
+/* Loading spinner */
+
+.loading-spinner-wrapper {
+    height: 105%;
+    width: 105%;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+
+    z-index: 10;
+}
+
+.lds-ring {
+    display: inline-block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid var(--dark-blue);
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: var(--dark-blue) transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }

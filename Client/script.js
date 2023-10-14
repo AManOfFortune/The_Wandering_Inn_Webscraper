@@ -60,6 +60,8 @@ function Utf8ArrayToStr(array) {
             dropdown.appendChild(option)
         }
     })
+
+    document.querySelector(".loading-spinner-wrapper").style.display = "none";
 })()
 
 function enableButton() {
