@@ -81,7 +81,7 @@ async function submitVolume() {
     const select = document.querySelector('#chapters')
     select.innerHTML = ""
 
-    const res = await fetch('http://localhost:8000', {
+    const res = await fetch('http://localhost:8000/chapters', {
         method: 'POST',
         headers: { 
             'Content-Type': 'application/json'
@@ -129,7 +129,7 @@ async function submitChapters() {
         if (done) {
             const done_message = newEl('p', {innerText: "Done!"})
             download_button.removeAttribute('disabled')
-            download_button.href = '../The_Wandering_Inn.zip'
+            download_button.href = './Output/The_Wandering_Inn.zip'
             messages_container.appendChild(done_message)
 
             return
@@ -163,7 +163,3 @@ function goBack() {
     select.removeAttribute('size')
 }
 
-window.addEventListener('beforeunload', async () => {
-    const res = await fetch('http://localhost:8000/close', {method: 'POST'})
-    console.log('close')
-})

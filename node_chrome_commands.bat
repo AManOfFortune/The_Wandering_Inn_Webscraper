@@ -1,1 +1,0 @@
-%~dp0nodejs\node.exe %~dp0Server\index.js | %~dp0chrome\chrome.exe --app=file:\\%~dp0Client\index.html
