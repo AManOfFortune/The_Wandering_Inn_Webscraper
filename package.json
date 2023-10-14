@@ -1,0 +1,19 @@
+{
+  "name": "the-wandering-inn-webscraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "adm-zip": "^0.5.9",
+    "axios": "^0.25.0",
+    "cheerio": "^1.0.0-rc.10",
+    "docx": "^7.3.0",
+    "epub-gen": "^0.1.0",
+    "express": "^4.17.2"
+  }
+}
