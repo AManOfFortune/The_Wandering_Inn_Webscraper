@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "adm-zip": "^0.5.9",
-    "axios": "^0.25.0",
+    "axios": "^1.6.7",
     "cheerio": "^1.0.0-rc.10",
     "docx": "^7.3.0",
     "epub-gen": "^0.1.0",
